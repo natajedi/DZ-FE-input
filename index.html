@@ -1,0 +1,285 @@
+﻿<!doctype html>
+<html lang="en-US" xmlns="http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Web Docs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header> 
+    <nav class="navigation">
+      <div class="navigation__group">
+    <img src="logo.png" alt="">HTML: MDN
+    <a href="/references/">References</a> 
+    <a href="/guides/">Guides</a>
+    <a href="/plus/">Plus</a>
+    <a href="/blog/">Blog</a>
+    <a href="/play/">Play</a> 
+    <a href="/aihelp/">AI Help</a>
+    <button id="theme-toggle">
+        <img src="theme.svg" alt="Theme">
+    </button>
+    <input type="search" name="search"/>
+    <a href="#">Log in</a>
+    <button>Sign up for free</button>
+    </div>
+  </nav>
+</header>
+    <div class="navigation__row">
+    <a href="/references/">References>HTML</a> 
+    <button id="english-btn">
+    <img src="english.svg" alt="Englihs (US)">
+    </button>
+</div>
+<main>
+    <div class="container">
+        <aside class="left">
+            <div class="content">
+        <label for="filter"></label>
+            <input type="text" id="filter" placeholder="Filter">
+            <option value="all"></option>
+                <section>
+                <ul style="list-style-type:none;">
+                <li>HTML</li>
+                <li>Tutorials</li>
+                <li>Html basics</li>
+                </ul>
+    </div>
+    </aside>
+    <div class="content">
+<article>
+<h1>HTML: HyperText Markup Language</h1>
+<p>
+The articles below can help you learn more about HTML.</p>
+<br>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate eget lectus at semper. Nullam tincidunt diam in purus aliquet, in placerat nisl interdum. Suspendisse rutrum mauris eu bibendum hendrerit. Duis nec mauris et mi commodo hendrerit. Morbi dignissim blandit luctus. Praesent leo augue, egestas lobortis ultricies eget, efficitur vel erat. Sed at urna porttitor mi elementum porta.
+</p>
+</article>
+<article>
+<br>
+<h2>The Input (Form Input) element</h2>
+<p>The available types are as follows:</p>
+<ul>
+<p>
+<li>
+<input type="button">
+<br>
+A push button with no default behavior displaying the value of the value attribute, empty by default.
+</li>
+</p>
+<p>
+<li>
+<input type="checkbox" name="checkbox"/>
+<br>
+A check box allowing single values to be selected/deselected.
+It is recommended to use a label (<label>) for a checkbox to ensure accessibility and ease of use for users with disabilities
+</li>
+</p>
+<p>
+<li>
+<input type="color" name="color"/>
+<br>
+A control for specifying a color; opening a color picker when active in supporting browsers.ering the color into a text field in #rrggbb hexadecimal format.
+</li>
+</p>
+<p>
+<li>
+<input type="date" name="date"/>
+<br>
+A control for entering a date (year, month, and day, with no time). Opens a date picker or numeric wheels for year, month, day when active in supporting browsers.
+</li>
+</p>
+<p>
+<li>
+<input type="datetime-local" name="datetime-local"/>
+<br>
+A control for entering a date and time, with no time zone. Opens a date picker or numeric wheels for date- and time-components when active in supporting browsers.
+</li>
+</p>
+<p>
+<li>
+<input type="email" name="email"/>
+<br>
+A field for editing an email address. Looks like a text input, but has validation parameters and relevant keyboard in supporting browsers and devices with dynamic keyboards.
+</li>
+</p>
+<p>
+<li>
+<input type="file" accept="image/*, text/*" name="file"/>
+<br>
+A control that lets the user select a file. Use the accept attribute to define the types of files that the control can select.
+</li>
+</p>
+<p>
+<li>
+<input id="userId" name="userId" type="hidden" value="abc123">
+<br>
+A control that is not displayed but whose value is submitted to the server. 
+</li>
+</p>
+<p>
+<li>
+<input type="image" name="image" src="" alt="image input"/>
+<br>
+A graphical submit button. Displays an image defined by the src attribute. The alt attribute displays if the image src is missing.
+</li>
+</p>
+<p>
+<li>
+<input type="month" name="month"/>
+<br>
+A control for entering a month and year, with no time zone.
+</li>
+</p>
+<p>
+<li>
+<input type="number" name="number"/>
+<br>
+A control for entering a number. Displays a spinner and adds default validation. Displays a numeric keypad in some devices with dynamic keypads.
+</p>
+</li>
+<p>
+<li>
+<input type="password" name="password"/>
+<br>
+A single-line text field whose value is obscured. Will alert user if site is not secure.
+</li>
+</p>
+<p>
+<li>
+<input type="radio" name="radio"/>
+<br>
+A radio button, allowing a single value to be selected out of multiple choices with the same name value.
+</li>
+</p>
+<p>
+<li>
+<input type="range" name="range" min="0" max="25"/>
+<br>
+A control for entering a number whose exact value is not important. Displays as a range widget defaulting to the middle value. Used in conjunction min and max to define the range of acceptable values.
+</li>
+</p>
+<p>
+<li>
+<input type="reset" name="reset"/>
+<br>
+A button that resets the contents of the form to default values. Not recommended.
+</li>
+</p>
+<p>
+<li>
+<input type="search" name="search"/>
+<br>
+A single-line text field for entering search strings. Line-breaks are automatically removed from the input value. May include a delete icon in supporting browsers that can be used to clear the field. Displays a search icon instead of enter key on some devices with dynamic keypads.
+</li>
+</p>
+<p>
+<li>
+<input type="submit" name="submit"/>
+<br>
+A button that submits the form.
+</li>
+</p>
+<p>
+<li>
+<input type="tel" name="tel"/>
+<br>
+A control for entering a telephone number. Displays a telephone keypad in some devices with dynamic keypads.
+</li>
+</p>
+<p>
+<li>
+<input type="text" name="text"/>
+<br>
+The default value. A single-line text field. Line-breaks are automatically removed from the input value.
+</li>
+</p>
+<p>
+<li>
+<input type="time" name="time"/>
+<br>
+A control for entering a time value with no time zone.
+</li>
+</p>
+<p>
+<li>
+<input type="url" name="url"/>
+<br>
+A field for entering a URL. Looks like a text input, but has validation parameters and relevant keyboard in supporting browsers and devices with dynamic keyboards.
+</li>
+</p>
+<p>
+<li>
+<input type="week" name="week"/>
+<br>
+A control for entering a date consisting of a week-year number and a week number with no time zone.
+</li>
+</p>
+</ul>
+</article>
+</div>
+<aside class="right">
+    <div class="content">
+        <section>
+            <ul style="list-style-type:none;">
+            <li>In this article<li></li>
+            <li>Key resources</li>
+            <li>Beginner's tutorials</li>
+            <li>Advanced topics</li>
+            <li>Reference</li>
+            <li>Related topics</li>
+        </ul>
+</section>
+</div>
+</aside>
+</main>
+<footer>
+    <div class="footer-row1">
+    <section>
+        <p>mdn</p>
+        <p>Your blueprint for a better internet.</p>
+    </section>
+    <section>
+        <ul style="list-style-type:none;">
+            <li>MDN</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Carrers</li>
+            <li>Adversite with us</li>
+        </ul>
+    </section>
+    <section>
+        <ul style="list-style-type:none;">
+            <li>Support</li>
+            <li>Product help</li>
+            <li>Report an issue</li>
+        </ul>
+    </section>
+    <section>
+        <ul style="list-style-type:none;">
+            <li>Our communities</li>
+            <li>MDN Community</li>
+            <li>MDN Forum</li>
+            <li>MDN Chat</li>
+        </ul>
+    </section>
+    <ul style="list-style-type:none;">
+        <li>Developers</li>
+        <li>Web Technologies</li>
+        <li>Learn Web Development</li>
+        <li>MDN Plus</li>
+    </ul>
+    <section>
+    </section>
+</div>
+<div class="footer-row2">
+    <section>
+       ©1998–2023. Content available under a Creative Commons license.
+    </section>
+</div>
+</footer>
+</body>
+</html>
