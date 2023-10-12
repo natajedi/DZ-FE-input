@@ -1,5 +1,5 @@
-﻿<!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -8,64 +8,64 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header> 
-    <nav class="navigation">
-      <div class="navigation__group">
-    <img src="readingpanel26.png" alt="">HTML: MDN
-    <a href="/references/">References</a> 
-    <a href="/guides/">Guides</a>
-    <a href="/plus/">Plus</a>
-    <a href="/blog/">Blog</a>
-    <a href="/play/">Play</a> 
-    <a href="/aihelp/">AI Help</a>
-    <button id="theme-toggle">
-        <img src="circle22.png" alt="Theme">
-        <span>Theme</span>
+<header class="header">
+    <p class="header__logo-text">
+         Web Docs HTML
+    </p>
+    <nav class="header__navigation">
+      <div class="header__navigation-group">
+    <img class="header__logo" src="readingpanel26.png" alt="Logo">
+    <a class="header__link" href="/references/">References</a> 
+    <a class="header__link" href="/guides/">Guides</a>
+    <a class="header__link" href="/plus/">Plus</a>
+    <a class="header__link" href="/blog/">Blog</a>
+    <a class="header__link" href="/play/">Play</a> 
+    <a class="header__link" href="/aihelp/">AI Help</a>
+    <button class="header__theme-toggle" id="theme-toggle">
+        <img class="header__theme-icon" src="circle22.png" alt="Theme">
+        <span class="header__theme-text">Theme</span>
     </button>
-    <div class="search-container">
-    <input type="search" name="search">
-    <img src="Search-Find-22.png" alt="Search Icon">
+    <div class="header__search-container">
+    <input class="header__search-input" type="search" name="search">
     </div>
-    <a href="#">Log in</a>
-    <button>Sign up for free</button>
+    <a class="header__login-link" href="#">Log in</a>
+    <button class="header__signup-btn">Sign up for free</button>
     </div>
   </nav>
-</header><hr>
-    <div class="navigation__row">
-    <a href="/references/">References>HTML</a> 
-    <button id="english-btn">English (US)
-    <img src="globe22.png" alt="English (US)">
-</button>
+</header>
+<hr class="line">
+<div class="navigation-row">
+    <a class="navigation-row__reference" href="/references/">References>HTML</a> 
+    <button class="navigation-row__button" id="english-btn">English (US)
+        <img class="navigation-row__icon" src="globe22.png" alt="English (US)">
+    </button>
 </div>
-<main>
-    <div class="container">
-        <aside class="left">
-    <div class="content">
-      <hr><label for="filter"></label>
-        <input type="text" id="filter" placeholder="Filter">
-        <select id="filterOptions">
-            <option value="all">All</option>
-        </select>
-        <section>
-            <h3>HTML</h3>
-            <ul style="list-style-type:none;">
-                <li>HTML</li>
-                <li>Tutorials</li>
-                <li>Html basics</li>
-                 <li>Multimedia and embedding</li>
-                 <li>HTML tables</li>
-            </ul>
-        </section>
-    </div>
-</aside>
-    <div class="content">
-<article><hr>
-<h1>HTML: HyperText Markup Language</h1>
-<br>
-The articles below can help you learn more about HTML.
-<p>
+<hr class="line">
+<main class="main">
+    <div class="main__container">
+        <aside class="main__left-sidebar">
+            <div class="main__sidebar-content">
+                <label class="main__sidebar-label" for="filter"></label>
+                <input class="main__sidebar-filter" type="text" id="filter" placeholder="Filter">
+                <section class="main__sidebar-section">
+                    <h3 class="main__sidebar-title">HTML</h3>
+                    <ul class="main__sidebar-list">
+                        <li class="main__sidebar-item">HTML</li>
+                        <li class="main__sidebar-item">Tutorials</li>
+                        <li class="main__sidebar-item">Html basics</li>
+                        <li class="main__sidebar-item">Multimedia and embedding</li>
+                        <li class="main__sidebar-item">HTML tables</li>
+                    </ul>
+                </section>
+            </div>
+        </aside>
+        <div class="main__content">
+            <article class="main__content-article">
+                <h1 class="main__content-title">HTML: HyperText Markup Language</h1>
+                <p class="main__content-text">
+                    The articles below can help you learn more about HTML.
+                </p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate eget lectus at semper. Nullam tincidunt diam in purus aliquet, in placerat nisl interdum. Suspendisse rutrum mauris eu bibendum hendrerit. Duis nec mauris et mi commodo hendrerit. Morbi dignissim blandit luctus. Praesent leo augue, egestas lobortis ultricies eget, efficitur vel erat. Sed at urna porttitor mi elementum porta.
-</p>
 </article>
 <article>
 <br>
@@ -80,7 +80,6 @@ A push button with no default behavior displaying the value of the value attribu
 <li>
 <input type="checkbox" name="checkbox">
 <br>
-<li>
 A check box allowing single values to be selected/deselected.
 It is recommended to use a label for a checkbox to ensure accessibility and ease of use for users with disabilities.
 </li>
@@ -187,68 +186,58 @@ A control for entering a date consisting of a week-year number and a week number
 </ul>
 </article>
 </div>
-<aside class="right">
-    <div class="content">
-        <section><hr>
-          <h4>In this article</h4> 
-            <ul style="list-style-type:none;"> 
-            <li>Key resources</li>
-            <li>Beginner's tutorials</li>
-            <li>Advanced topics</li>
-            <li>Reference</li>
-            <li>Related topics</li>
-        </ul>
-</section>
-</div>
+<aside class="main__right-sidebar">
+    <div class="main__sidebar-content">
+        <section class="main__sidebar-section">
+            <h4 class="main__sidebar-title">In this article</h4> 
+            <ul class="main__sidebar-list"> 
+                <li class="main__sidebar-item">Key resources</li>
+                <li class="main__sidebar-item">Beginner's tutorials</li>
+                <li class="main__sidebar-item">Advanced topics</li>
+                <li class="main__sidebar-item">Reference</li>
+                <li class="main__sidebar-item">Related topics</li>
+            </ul>
+        </section>
+    </div>
 </aside>
+</div>
 </main>
-<footer>
-    <div class="footer-row1">
-    </section>
-<section>
-    <p>mdn</p>
-    <p>Your blueprint for a better internet.</p>
-    <img src="twitter22.png" alt="Twitter icon">
-    <img src="rssfeeds22.png" alt="RSS icon">
-    <img src="github-22.png" alt="Github icon">
-</section>
-<section>
-<span class='footer-icons'></span></section>
-    <section>
-        <ul style="list-style-type:none;">
-            <li>MDN</li>
-            <li>About</li>
-            <li>Blog</li>
-            <li>Carrers</li>
-            <li>Adversite with us</li>
+<footer class="footer">
+    <div class="footer__row footer__row--1">
+        <section class="footer__section">
+            <h4 class="footer__text">mdn</h4>
+            <h4 class="footer__text">Your blueprint for a better internet.</h4>
+            <img class="footer__icon" src="twitter22.png" alt="Twitter icon">
+            <img class="footer__icon" src="rssfeeds22.png" alt="RSS icon">
+            <img class="footer__icon" src="github22.png" alt="Github icon">
+        <ul class="footer__list">
+         <li class="footer__list-item">MDN</li>
+         <li class="footer__list-item">About</li>
+         <li class="footer__list-item">Blog</li>
+         <li class="footer__list-item">Careers</li>
+         <li class="footer__list-item">Advertise with us</li>
         </ul>
-    </section>
-    <section>
-        <ul style="list-style-type:none;">
-            <li>Support</li>
-            <li>Product help</li>
-            <li>Report an issue</li>
+        <ul class="footer__list">
+         <li class="footer__list-item">Support</li>
+         <li class="footer__list-item">Product help</li>
+         <li class="footer__list-item">Report an issue</li>
+        </ul> 
+         <ul class="footer__list">
+         <li class="footer__list-item">Our communities</li>
+         <li class="footer__list-item">MDN Community</li>
+         <li class="footer__list-item">MDN Forum</li>
+         <li class="footer__list-item">MDN Chat</li>
         </ul>
-    </section>
-    <section>
-        <ul style="list-style-type:none;">
-            <li>Our communities</li>
-            <li>MDN Community</li>
-            <li>MDN Forum</li>
-            <li>MDN Chat</li>
+        <ul class="footer__list">
+         <li class="footer__list-item">Developers</li>
+         <li class="footer__list-item">Web Technologies</li>
+         <li class="footer__list-item">Learn Web Development</li>
+         <li class="footer__list-item">MDN Plus</li>
         </ul>
-    </section>
-    <ul style="list-style-type:none;">
-        <li>Developers</li>
-        <li>Web Technologies</li>
-        <li>Learn Web Development</li>
-        <li>MDN Plus</li>
-    </ul>
-    <section>
     </section>
 </div>
-<div class="footer-row2">
-    <section>
+<div class="footer__row footer__row--2">
+    <section class="footer__section">
        ©1998–2023. Content available under a Creative Commons license.
     </section>
 </div>
