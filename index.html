@@ -21,24 +21,31 @@
     <a class="header__link" href="/blog/">Blog</a>
     <a class="header__link" href="/play/">Play</a> 
     <a class="header__link" href="/aihelp/">AI Help</a>
+  </div>
     <button class="header__theme-toggle" id="theme-toggle">
         <img class="header__theme-icon" src="circle22.png" alt="Theme">
         <span class="header__theme-text">Theme</span>
     </button>
     <div class="header__search-container">
-    <input class="header__search-input" type="search" name="search">
+    <div class="header__search-input-container">
+        <input class="header__search-input" type="search" name="search">
+      </div>
+     </div>
+<div class="header__login-container">
+      <a class="header__login-link" href="#">Log in</a>
     </div>
-    <a class="header__login-link" href="#">Log in</a>
-    <button class="header__signup-btn">Sign up for free</button>
+    <div class="header__signup-container">
+      <button class="header__signup-btn">Sign up for free</button>
     </div>
   </nav>
 </header>
 <hr class="line">
 <div class="navigation-row">
     <a class="navigation-row__reference" href="/references/">References>HTML</a> 
-    <button class="navigation-row__button" id="english-btn">English (US)
-        <img class="navigation-row__icon" src="globe22.png" alt="English (US)">
-    </button>
+    <button class="navigation-row__button" id="english-btn">
+  <img class="navigation-row__icon" src="globe22.png" alt="English (US)">
+  English (US)
+</button>
 </div>
 <hr class="line">
 <main class="main">
@@ -183,23 +190,36 @@ A field for entering a URL. Looks like a text input, but has validation paramete
 <br>
 A control for entering a date consisting of a week-year number and a week number with no time zone.
 </li>
-  <br>
-<video src="Trailer.mp4" controls>
-  <p>
+
+<li>
+<br>Loading video
+<div class="video-block">
+  <video class="video-block__video" src="Trailer.mp4" controls></video>
+  <p class="video-block__message">
     Ваш браузер не поддерживает HTML5 видео. Используйте
-    <a href="https://www.youtube.com/watch?v=gCcx85zbxz4">ссылку на видео</a> для доступа.
+    <a class="video-block__link" href="https://www.youtube.com/watch?v=gCcx85zbxz4">ссылку на видео</a> для доступа.
   </p>
-</video>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gCcx85zbxz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
+</div>
+</li>
+<li>
+<br>Downloading videos from YouTube
+<div class="iframe-block">
+  <iframe class="iframe-block__video" src="https://www.youtube.com/embed/gCcx85zbxz4" title="YouTube …rometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="border: 0;" allowfullscreen></iframe>
+</div>
+</li>
+<li>
+<br>Audio download
+<div class="audio-block">
 <audio controls>
-  <source src="zvuk.mp3" type="audio/mp3" />
-  <source src="zvuk.ogg" type="audio/ogg" />
-  <p>
+  <source src="zvuk.mp3" type="audio/mp3">
+  <source src="zvuk.ogg" type="audio/ogg">
+ <p>
     Your browser doesn't support HTML5 audio. Here is a
     <a href="viper.mp3">link to the audio</a> instead.
   </p>
 </audio>
+</div>
+</li>
 </ul>
 </article>
 </div>
@@ -222,7 +242,7 @@ A control for entering a date consisting of a week-year number and a week number
 <footer class="footer">
     <div class="footer__row footer__row--1">
         <section class="footer__section">
-            <h4 class="footer__text">mdn</h4>
+            <h2 class="footer__text">mdn</h2>
             <h4 class="footer__text">Your blueprint for a better internet.</h4>
             <img class="footer__icon" src="twitter22.png" alt="Twitter icon">
             <img class="footer__icon" src="rssfeeds22.png" alt="RSS icon">
@@ -255,7 +275,7 @@ A control for entering a date consisting of a week-year number and a week number
 </div>
 <div class="footer__row footer__row--2">
     <section class="footer__section">
-       ©1998–2023. Content available under a Creative Commons license.
+       <h2 class="footer__text">©1998–2023. Content available under a Creative Commons license.</h2>  
     </section>
 </div>
 </footer>
