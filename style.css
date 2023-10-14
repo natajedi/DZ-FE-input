@@ -73,6 +73,14 @@
 .header__login-link {
   padding-top: 5px;
   padding-bottom: 5px;
+  /*
+  Вижу что эти стили используется в нескольких местах. Вместо этого можно было создать класс link и юзать его везде где он нужен. Это не единичный случай.
+  Например {
+   display: flex;
+   justify-content: space-between;
+  }
+   Можно вынеcти в класс row, а стиль   justify-content: space-between; добавить в класс-модификатор (например row--stretched-to-sides)
+  */
   text-decoration: none;
   color: #333;
 }
