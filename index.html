@@ -10,16 +10,16 @@
   <body>
     <header class="header">
       <p class="header__logo-text">Web Docs HTML</p>
-      <nav class="header__navigation">
+      <nav class="header__navigation flex-container">
         <div class="header__navigation-group">
           <img class="header__logo"
             src="assets/images/readingpanel26.png" alt="Logo">
-          <a class="header__link" href="/references/">References</a>
-          <a class="header__link" href="/guides/">Guides</a>
-          <a class="header__link" href="/plus/">Plus</a>
-          <a class="header__link" href="/blog/">Blog</a>
-          <a class="header__link" href="/play/">Play</a>
-          <a class="header__link" href="/aihelp/">AI Help</a>
+          <a class="header__link link" href="/references/">References</a>
+          <a class="header__link link" href="/guides/">Guides</a>
+          <a class="header__link link" href="/plus/">Plus</a>
+          <a class="header__link link" href="/blog/">Blog</a>
+          <a class="header__link link" href="/play/">Play</a>
+          <a class="header__link link" href="/aihelp/">AI Help</a>
         </div>
         <button class="header__theme-toggle" id="theme-toggle" type="button">
           <img class="header__theme-icon"
@@ -27,21 +27,21 @@
             alt="Theme">
           <span class="header__theme-text">Theme</span>
         </button>
-        <div class="header__search-container">
+        <div class="header__search-container container">
           <div class="header__search-input-container">
             <input class="header__search-input" type="search" name="search">
           </div>
         </div>
-        <div class="header__login-container">
-          <a class="header__login-link" href="#">Log in</a>
+        <div class="header__login-container container">
+          <a class="header__login-link link" href="#">Log in</a>
         </div>
-        <div class="header__signup-container">
+        <div class="header__signup-container container">
           <button class="header__signup-btn" type="submit">Sign up for free</button>
         </div> 
       </nav>
     </header>
     <hr class="line">
-    <div class="navigation-row">
+    <div class="navigation-row flex-container">
       <a class="navigation-row__reference" href="/references/"
         >References>HTML</a>
       <button class="navigation-row__button" id="english-btn" type="button">
@@ -51,16 +51,16 @@
       </button>
     </div>
     <hr class="line">
-    <main class="main">
-      <div class="main__container">
-        <aside class="main__left-sidebar">
+    <main class="main flex-container">
+      <div class="main__container flex-container">
+        <aside class="main__left-sidebar flex">
           <div class="main__sidebar-content">
             <label class="main__sidebar-label" for="filter"></label>
             <input class="main__sidebar-filter"
               type="text"
               id="filter"
               placeholder="Filter">
-            <section class="main__sidebar-section">
+            <section class="main__sidebar-section main-margin">
               <h3 class="main__sidebar-title">HTML</h3>
               <ul class="main__sidebar-list">
                 <li class="main__sidebar-item">HTML</li>
@@ -72,10 +72,10 @@
             </section>
           </div>
         </aside>
-        <div class="main__content">
-          <article class="main__content-article">
-            <h1 class="main__content-title">HTML: HyperText Markup Language</h1>
-            <p class="main__content-text">
+        <div class="main__content flex">
+          <article class="main__content-article main-margin">
+            <h1 class="main__content-title main-margin">HTML: HyperText Markup Language</h1>
+            <p class="main__content-text main-margin">
               The articles below can help you learn more about HTML.
             </p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -276,7 +276,7 @@
             </ul>
           </article>
         </div>
-        <aside class="main__right-sidebar">
+        <aside class="main__right-sidebar flex">
           <div class="main__sidebar-content">
             <section class="main__sidebar-section">
               <h4 class="main__sidebar-title">In this article</h4>
@@ -294,7 +294,7 @@
     </main>
     <footer class="footer">
       <div class="footer__row footer__row--1">
-        <section class="footer__section">
+        <section class="footer__section flex-container">
           <h2 class="footer__text">mdn</h2>
           <h4 class="footer__text">Your blueprint for a better internet.</h4>
           <img class="footer__icon" src="assets/images/twitter22.png" alt="Twitter icon">
