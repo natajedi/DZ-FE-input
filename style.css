@@ -2,40 +2,34 @@
   font-family: Arial, sans-serif;
   margin: 5px;
   padding: 5px;
+  color: #000000;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
   background-color: #eff0f1;
 }
 
 .main {
+  align-items: center;
+}
+
+.flex-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__navigation {
-  display: flex;
-  justify-content: space-around;
+  flex-direction: row;
 }
 
 .header__navigation-group {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .header__logo {
   height: 50px;
   margin-right: 20px;
-}
-
-.header__link {
-  text-decoration: none;
-  margin-right: 20px;
-  border: 5px;
-  color: #333;
 }
 
 .header__theme-toggle {
@@ -49,22 +43,12 @@
   margin-right: 5px;
 }
 
-.header__theme-text {
-  color: #333;
-}
-
-.header__search-container {
-  display: flex;
-  align-items: center;
-  margin-left: 20px;
-}
-
 .header__search-input {
   padding: 5px;
   border: none;
 }
 
-.header__login-container {
+.container {
   display: flex;
   align-items: center;
   margin-left: 20px;
@@ -73,22 +57,6 @@
 .header__login-link {
   padding-top: 5px;
   padding-bottom: 5px;
-  /*
-  Вижу что эти стили используется в нескольких местах. Вместо этого можно было создать класс link и юзать его везде где он нужен. Это не единичный случай.
-  Например {
-   display: flex;
-   justify-content: space-between;
-  }
-   Можно вынеcти в класс row, а стиль   justify-content: space-between; добавить в класс-модификатор (например row--stretched-to-sides)
-  */
-  text-decoration: none;
-  color: #333;
-}
-
-.header__signup-container {
-  display: flex;
-  align-items: center;
-  margin-left: 20px;
 }
 
 .header__signup-btn {
@@ -106,17 +74,6 @@
   margin: 10px 0;
 }
 
-.navigation-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navigation-row__reference {
-  text-decoration: none;
-  color: #333;
-}
-
 .navigation-row__button {
   background-color: transparent;
   border: none;
@@ -129,27 +86,15 @@
 }
 
 .main {
-  display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .main__container {
-  display: flex;
-  justify-content: space-between;
-  width: 70%;
-  margin: 0 auto;
+  flex-direction: row;
 }
 
-.main__left-sidebar {
+.flex {
   flex: 1;
-}
-
-.main__right-sidebar {
-  flex: 1;
-}
-
-.main__content {
-  flex: 2;
 }
 
 .main__sidebar-content {
@@ -172,10 +117,6 @@
   padding: 10px;
 }
 
-.main__sidebar-section {
-  margin-bottom: 20px;
-}
-
 .main__sidebar-title {
   margin-bottom: 10px;
 }
@@ -189,21 +130,13 @@
   margin-bottom: 10px;
 }
 
-.main__content-article {
-  margin-bottom: 20px;
-}
-
 .main__content-hr {
   border: none;
   border-top: 1px solid #000;
   margin: 20px 0;
 }
 
-.main__content-title {
-  margin-bottom: 20px;
-}
-
-.main__content-text {
+.main-margin {
   margin-bottom: 20px;
 }
 
@@ -222,20 +155,18 @@
 }
 
 .footer__section {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
+  flex-direction: row;
 }
 
 .footer__list-item {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
+  flex-direction: column;
 }
 
 .footer__list-item:first-child {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 12px;
 }
 
-
+.link {
+  text-decoration: none;
+}
