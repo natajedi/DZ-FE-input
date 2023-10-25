@@ -74,13 +74,13 @@
   margin: 10px 0;
 }
 
-.navigation-row__button {
+.breadcrumbs__button {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-.navigation-row__icon {
+.breadcrumbs__icon {
   height: 20px;
   margin-left: 5px;
 }
