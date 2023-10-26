@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body class="wrapper">
+<div class="header__wrapper">
+<p class="header__content-text main-margin">
+          Get real-time assistance with your coding queries.
+                </p>
+</div>
 <header class="header wrapper__header">
     <div class="container header__container">
         <nav class="header__navigation flex-container">
@@ -45,7 +50,7 @@
     </div>
 </header>
 
-<hr class="line"> <!-- Это достигается при помощи css-свойства border, а не таким образом -->
+<!-- <hr class="line"> Это достигается при помощи css-свойства border, а не таким образом -->
 
 <div class="breadcrumbs"> <!-- Можно назвать Breadcrumbs-->
     <div class="container breadcrumbs__container">
@@ -57,7 +62,7 @@
         </button>
     </div>
 </div>
-<hr class="line">
+<!-- <hr class="line"> -->
 <main class="main flex-container">
     <div class="main__container flex-container">
         <aside class="main__left-sidebar flex">
@@ -302,11 +307,17 @@
 <footer class="footer">
     <div class="footer__row footer__row--1">
         <section class="footer__section flex-container">
+        <div class="footer__logo-icons">
+            <div class="footer__section_logo">
             <h2 class="footer__text">mdn</h2>
             <h4 class="footer__text">Your blueprint for a better internet.</h4>
+        </div>
+        <div class="footer__icons">
             <img class="footer__icon" src="assets/images/twitter22.png" alt="Twitter icon">
             <img class="footer__icon" src="assets/images/rssfeeds22.png" alt="RSS icon">
             <img class="footer__icon" src="assets/images/github22.png" alt="Github icon">
+        </div> 
+    </div>
             <ul class="footer__list">
                 <li class="footer__list-item">MDN</li>
                 <li class="footer__list-item">About</li>
@@ -335,9 +346,9 @@
     </div>
     <div class="footer__row footer__row--2">
         <section class="footer__section">
-            <h4 class="footer__text">
+            <h5 class="footer__text">
                 ©1998–2023. Content available under a Creative Commons license.
-            </h4>
+            </h5>
         </section>
     </div>
 </footer>
