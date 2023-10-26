@@ -1,18 +1,29 @@
-﻿body {
+﻿/*С изменениями*/
+
+body {
     font-family: Arial, sans-serif;
-    margin: 5px; /* 1. Не нужно. 2. нарушает БЭМ*/
     padding: 5px;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: #eff0f1;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgb(52, 51, 51);
 }
 
 .main {
     display: flex;
     justify-content: space-between;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f7f7;
 }
 
 .header__navigation {
@@ -59,7 +70,7 @@
 
 .header__search-input {
     padding: 5px;
-    border: none;
+    border-radius: 10px;
 }
 
 .header__login-container {
@@ -71,15 +82,6 @@
 .header__login-link {
     padding-top: 5px;
     padding-bottom: 5px;
-    /*
-    Вижу что эти стили используется в нескольких местах. Вместо этого можно было создать класс link и юзать его везде где он нужен. Это не единичный случай.
-    Например {
-     display: flex;
-     justify-content: space-between;
-    }
-     Можно вынеcти в класс row, а стиль   justify-content: space-between; добавить в класс-модификатор (например row--stretched-to-sides)
-    */
-    /* ???*/
     text-decoration: none;
     color: #333;
 }
@@ -91,12 +93,15 @@
 }
 
 .header__signup-btn {
+    align-items: center;
     background-color: #000000;
+    border: 1px solid;
+    border-radius: 5px;
     color: #fff;
-    border: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    cursor: pointer;
+    display: flex;
+    gap: 0.25rem;
+    justify-content: center;
+    position: relative;
 }
 
 .line {
@@ -106,14 +111,19 @@
 }
 
 .breadcrumbs__reference {
+    position: relative;
+    z-index: 0;
     text-decoration: none;
-    color: #333;
+    color: #101010;
 }
 
 .breadcrumbs__button {
     background-color: transparent;
     border: none;
-    cursor: pointer; /* Вместо того, чтобы использовать это свойство во всех классах, нужно создать класс button и использовать его*/
+}
+
+.button {
+    cursor: pointer; 
 }
 
 .breadcrumbs__icon {
@@ -123,14 +133,14 @@
 
 .main {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 
 .main__container {
     display: flex;
     justify-content: space-between;
     width: 70%;
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 
 .main__left-sidebar {
@@ -147,6 +157,7 @@
 
 .main__sidebar-content {
     padding: 20px;
+    font-size: 12px;
 }
 
 .main__sidebar-label {
@@ -212,23 +223,33 @@
 
 .footer {
     list-style-type: none;
+    background-color: #eff0f1;
+    margin-top: auto;
 }
 
 .footer__section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.footer__logo-icons {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer__list-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 14px;
 }
 
 .footer__list-item:first-child {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 14px;
 }
 
 .container {
@@ -241,6 +262,7 @@
     justify-content: space-between;
     width: 100%;
 }
+
 .header-links {
     display: flex;
     gap: 16px;
@@ -251,7 +273,22 @@
 }
 
 .breadcrumbs__container {
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #eff0f1;
+}
+
+.flex-container {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.link {
+    text-decoration: none;
+    color: #000000;
 }
