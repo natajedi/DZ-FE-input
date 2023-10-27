@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body class="wrapper">
-<div class="header__wrapper">
-<p class="header__content-text main-margin">
-          Get real-time assistance with your coding queries.
-                </p>
+<div class="header__wrapper"> <!--Тут указан элемент wrapper блока header, который лежит вне самого блока. Такого быть не должно -->
+    <p class="header__content-text main-margin">
+        Get real-time assistance with your coding queries.
+    </p>
 </div>
 <header class="header wrapper__header">
     <div class="container header__container">
@@ -305,19 +305,19 @@
     </div>
 </main>
 <footer class="footer">
-    <div class="footer__row footer__row--1">
+    <div class="footer__row footer__row--1"> <!--footer__row--1 - во-первых, название довольно странное, во-вторых, класс пустой -->
         <section class="footer__section flex-container">
-        <div class="footer__logo-icons">
-            <div class="footer__section_logo">
-            <h2 class="footer__text">mdn</h2>
-            <h4 class="footer__text">Your blueprint for a better internet.</h4>
-        </div>
-        <div class="footer__icons">
-            <img class="footer__icon" src="assets/images/twitter22.png" alt="Twitter icon">
-            <img class="footer__icon" src="assets/images/rssfeeds22.png" alt="RSS icon">
-            <img class="footer__icon" src="assets/images/github22.png" alt="Github icon">
-        </div> 
-    </div>
+            <div class="footer__logo-icons">
+                <div class="footer__section_logo">
+                    <h2 class="footer__text">mdn</h2>
+                    <h4 class="footer__text">Your blueprint for a better internet.</h4>
+                </div>
+                <div class="footer__icons">
+                    <img class="footer__icon" src="assets/images/twitter22.png" alt="Twitter icon">
+                    <img class="footer__icon" src="assets/images/rssfeeds22.png" alt="RSS icon">
+                    <img class="footer__icon" src="assets/images/github22.png" alt="Github icon">
+                </div>
+            </div>
             <ul class="footer__list">
                 <li class="footer__list-item">MDN</li>
                 <li class="footer__list-item">About</li>
