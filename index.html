@@ -8,13 +8,8 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body class="wrapper">
-<div class="header__wrapper"> <!--Тут указан элемент wrapper блока header, который лежит вне самого блока. Такого быть не должно -->
-    <p class="header__content-text main-margin">
-        Get real-time assistance with your coding queries.
-    </p>
-</div>
 <header class="header wrapper__header">
-    <div class="container header__container">
+    <!--<div class="container header__container">-->
         <nav class="header__navigation flex-container">
             <div class="header__navigation-group">
                 <img class="header__logo" src="assets/images/readingpanel26.png" alt="Logo">
@@ -47,12 +42,9 @@
                 <button class="header__signup-btn" type="submit">Sign up for free</button>
             </div>
         </div>
-    </div>
+    <!--</div>-->
 </header>
-
-<!-- <hr class="line"> Это достигается при помощи css-свойства border, а не таким образом -->
-
-<div class="breadcrumbs"> <!-- Можно назвать Breadcrumbs-->
+<div class="breadcrumbs"> 
     <div class="container breadcrumbs__container">
         <a class="breadcrumbs__reference" href="/references/">References>HTML</a>
         <button class="breadcrumbs__button" id="english-btn" type="button">
@@ -62,9 +54,8 @@
         </button>
     </div>
 </div>
-<!-- <hr class="line"> -->
 <main class="main flex-container">
-    <div class="main__container flex-container">
+    <!--<div class="main__container flex-container">-->
         <aside class="main__left-sidebar flex">
             <div class="main__sidebar-content">
                 <label class="main__sidebar-label" for="filter"></label>
@@ -110,186 +101,16 @@
                         the value attribute, empty by default.
                     </li>
                     <li>
-                        <input type="checkbox" name="checkbox">
-                        <br>
-                        A check box allowing single values to be selected/deselected. It
-                        is recommended to use a label for a checkbox to ensure
-                        accessibility and ease of use for users with disabilities.
-                    </li>
-                    <li>
-                        <input type="color" name="color">
-                        <br>
-                        A control for specifying a color; opening a color picker when
-                        active in supporting browsers.ering the color into a text field
-                        in #rrggbb hexadecimal format.
-                    </li>
-                    <li>
-                        <input type="date" name="date">
-                        <br>
-                        A control for entering a date (year, month, and day, with no
-                        time). Opens a date picker or numeric wheels for year, month,
-                        day when active in supporting browsers.
-                    </li>
-                    <li>
-                        <input type="datetime-local" name="datetime-local">
-                        <br>
-                        A control for entering a date and time, with no time zone. Opens
-                        a date picker or numeric wheels for date- and time-components
-                        when active in supporting browsers.
-                    </li>
-                    <li>
-                        <input type="email" name="email">
-                        <br>
-                        A field for editing an email address. Looks like a text input,
-                        but has validation parameters and relevant keyboard in
-                        supporting browsers and devices with dynamic keyboards.
-                    </li>
-                    <li>
-                        <input type="file" accept="image/*, text/*" name="file">
-                        <br>
-                        A control that lets the user select a file. Use the accept
-                        attribute to define the types of files that the control can
-                        select.
-                    </li>
-                    <li>
-                        <input id="userId" name="userId" type="hidden" value="abc123">
-                        <br>
-                        A control that is not displayed but whose value is submitted to
-                        the server.
-                    </li>
-                    <li>
-                        <input type="image"
-                               name="image"
-                               src="images/image.png"
-                               alt="image input">
-                        <br>
-                        A graphical submit button. Displays an image defined by the src
-                        attribute. The alt attribute displays if the image src is
-                        missing.
-                    </li>
-                    <li>
-                        <input type="month" name="month">
-                        <br>
-                        A control for entering a month and year, with no time zone.
-                    </li>
-                    <li>
-                        <input type="number" name="number">
-                        <br>
-                        A control for entering a number. Displays a spinner and adds
-                        default validation. Displays a numeric keypad in some devices
-                        with dynamic keypads.
-                    </li>
-                    <li>
-                        <input type="password" name="password">
-                        <br>
-                        A single-line text field whose value is obscured. Will alert
-                        user if site is not secure.
-                    </li>
-                    <li>
-                        <input type="radio" name="radio">
-                        <br>
-                        A radio button, allowing a single value to be selected out of
-                        multiple choices with the same name value.
-                    </li>
-                    <li>
-                        <input type="range" name="range" min="0" max="25">
-                        <br>
-                        A control for entering a number whose exact value is not
-                        important. Displays as a range widget defaulting to the middle
-                        value. Used in conjunction min and max to define the range of
-                        acceptable values.
-                    </li>
-                    <li>
-                        <input type="reset" name="reset">
-                        <br>
-                        A button that resets the contents of the form to default values.
-                        Not recommended.
-                    </li>
-                    <li>
-                        <input type="search" name="search">
-                        <br>
-                        A single-line text field for entering search strings.
-                        Line-breaks are automatically removed from the input value. May
-                        include a delete icon in supporting browsers that can be used to
-                        clear the field. Displays a search icon instead of enter key on
-                        some devices with dynamic keypads.
-                    </li>
-                    <li>
-                        <input type="submit" name="submit">
-                        <br>
-                        A button that submits the form.
-                    </li>
-                    <li>
-                        <input type="tel" name="tel">
-                        <br>
-                        A control for entering a telephone number. Displays a telephone
-                        keypad in some devices with dynamic keypads.
-                    </li>
-                    <li>
-                        <input type="text" name="text">
-                        <br>
-                        The default value. A single-line text field. Line-breaks are
-                        automatically removed from the input value.
-                    </li>
-                    <li>
-                        <input type="time" name="time">
-                        <br>
-                        A control for entering a time value with no time zone.
-                    </li>
-                    <li>
-                        <input type="url" name="url">
-                        <br>
-                        A field for entering a URL. Looks like a text input, but has
-                        validation parameters and relevant keyboard in supporting
-                        browsers and devices with dynamic keyboards.
-                    </li>
-                    <li>
                         <input type="week" name="week">
                         <br>
                         A control for entering a date consisting of a week-year number
                         and a week number with no time zone.
                     </li>
-                    <li>
-                        <br>Loading video
-                        <div class="video-block">
-                            <video
-                                    class="video-block__video"
-                                    src="assets/video/Trailer.mp4" controls></video>
-                            <p class="video-block__message">
-                                Ваш браузер не поддерживает HTML5 видео. Используйте
-                                <a class="video-block__link" href="https://www.youtube.com/watch?v=UDp-43vG93Q">
-                                    ссылку на видео</a> для доступа.
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <br>Downloading videos from YouTube
-                        <div class="iframe-block">
-                            <iframe class="iframe-block__video"
-                                    src="https://www.youtube.com/embed/gCcx85zbxz4"
-                                    title="YouTube …rometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    style="border: 0"
-                                    allowfullscreen></iframe>
-                        </div>
-                    </li>
-                    <li>
-                        <br>Audio download
-                        <div class="audio-block">
-                            <audio controls>
-                                <source src="assets/audio/zvuk.mp3" type="audio/mp3">
-                                <source src="assets/audio/zvuk.mp3" type="audio/ogg">
-                                <p>
-                                    Your browser doesn't support HTML5 audio. Here is a
-                                    <a href="viper.mp3">link to the audio</a> instead.
-                                </p>
-                            </audio>
-                        </div>
-                    </li>
                 </ul>
             </article>
         </div>
         <aside class="main__right-sidebar flex">
-            <div class="main__sidebar-content">
+            <!--<div class="main__sidebar-content">-->
                 <section class="main__sidebar-section">
                     <h4 class="main__sidebar-title">In this article</h4>
                     <ul class="main__sidebar-list">
@@ -300,12 +121,11 @@
                         <li class="main__sidebar-item">Related topics</li>
                     </ul>
                 </section>
-            </div>
+            <!--</div>-->
         </aside>
     </div>
 </main>
 <footer class="footer">
-    <div class="footer__row footer__row--1"> <!--footer__row--1 - во-первых, название довольно странное, во-вторых, класс пустой -->
         <section class="footer__section flex-container">
             <div class="footer__logo-icons">
                 <div class="footer__section_logo">
@@ -343,14 +163,11 @@
                 <li class="footer__list-item">MDN Plus</li>
             </ul>
         </section>
-    </div>
-    <div class="footer__row footer__row--2">
         <section class="footer__section">
             <h5 class="footer__text">
                 ©1998–2023. Content available under a Creative Commons license.
             </h5>
         </section>
-    </div>
 </footer>
 </body>
 </html>
